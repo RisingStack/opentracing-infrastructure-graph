@@ -52,3 +52,14 @@ histogram_quantile(0.95, sum(rate(operation_duration_seconds_bucket{name="http_s
 ```
 
 ![95th response time between services](img/response_time_95th.png)
+
+## Infrastructure topology
+
+Data comes from Prometheus.  
+Uses [vizceral](https://github.com/Netflix/vizceral).
+
+```
+npm run start-client
+```
+
+![Infrastructure topology](img/topology.png)

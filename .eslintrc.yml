@@ -1,11 +1,11 @@
 ---
-  extends: airbnb-base
+  extends: airbnb
   env:
     node: true
     mocha: true
     es6: true
   parserOptions:
-    sourceType: strict
+    sourceType: module
   rules:
     generator-star-spacing:
       - 2
@@ -40,9 +40,9 @@
     semi:
       - 2
       - never
-    strict:
-      - 2
-      - global
+    strict: 0
     arrow-parens:
       - 2
       - always
+    jsx-a11y/href-no-hash: 0
+    react/jsx-filename-extension: 0

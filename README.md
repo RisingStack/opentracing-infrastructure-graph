@@ -29,6 +29,8 @@ curl http://localhost:3001
 
 ## Metrics between services
 
+`parent_service="unknown"` label means that the request initiator is not instrumented *(Prometheus scraper, curl, etc)*.
+
 ### Throughput
 
 Prometheus query:
@@ -47,4 +49,4 @@ Prometheus query:
 histogram_quantile(0.95, sum(rate(operation_duration_seconds_bucket{name="http_server"}[1m])) by (le, service, parent_service)) * 1000
 ```
 
-![95th response time between services](img/response time_95th.png)
+![95th response time between services](img/response_time_95th.png)

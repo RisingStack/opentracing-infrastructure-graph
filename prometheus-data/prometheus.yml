@@ -1,0 +1,14 @@
+scrape_configs:
+  - job_name: 'services'
+    scrape_interval: 5s
+
+    static_configs:
+      - targets: ['192.168.0.10:3001']
+        labels:
+          service: 'my-server-1'
+      - targets: ['192.168.0.10:3002']
+        labels:
+          service: 'my-server-2'
+      - targets: ['192.168.0.10:3003']
+        labels:
+          service: 'my-server-3'

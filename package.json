@@ -1,0 +1,45 @@
+{
+  "name": "@risingstack/opentracing-infrastructure-graph",
+  "version": "0.0.0",
+  "description": "Visualizing infrastructure topology via OpenTracing instrumentation",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint test services",
+    "start": "npm-run-all --parallel start-server1 start-server2 start-server3",
+    "start-server1": "node services/server1",
+    "start-server2": "node services/server2",
+    "start-server3": "node services/server3"
+  },
+  "author": "RisingStack, Inc.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RisingStack/opentracing-infrastructure-graph.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RisingStack/opentracing-infrastructure-graph/issues"
+  },
+  "homepage": "https://github.com/RisingStack/opentracing-infrastructure-graph#readme",
+  "keywords": [
+    "infrastructure",
+    "visualization",
+    "opentracing"
+  ],
+  "dependencies": {
+    "@risingstack/opentracing-auto": "1.2.1",
+    "@risingstack/opentracing-metrics-tracer": "2.0.1",
+    "express": "4.15.4",
+    "request": "2.81.0",
+    "request-promise-native": "1.0.4"
+  },
+  "devDependencies": {
+    "eslint": "4.5.0",
+    "eslint-config-airbnb-base": "11.3.2",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-promise": "3.5.0",
+    "npm-run-all": "4.1.1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

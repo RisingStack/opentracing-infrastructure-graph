@@ -31,6 +31,8 @@ curl http://localhost:3001
 
 `parent_service="unknown"` label means that the request initiator is not instrumented *(Prometheus scraper, curl, etc)*.
 
+![parent_service labels](img/labels.png)
+
 ### Throughput
 
 Prometheus query:

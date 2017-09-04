@@ -1,6 +1,11 @@
 # opentracing-infrastructure-graph
 
-Visualizing infrastructure topology via OpenTracing instrumentation.
+Visualizing infrastructure topology via OpenTracing instrumentation.  
+
+This application uses the following libraries to extract the topology metrics to [Prometheus](https://prometheus.io/) via [OpenTracing](http://opentracing.io/):
+
+- [opentracing-metrics-tracer](https://github.com/RisingStack/opentracing-metrics-tracer)
+- [opentracing-auto](https://github.com/RisingStack/opentracing-auto)
 
 ## Requirements
 

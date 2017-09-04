@@ -5,8 +5,8 @@ import superagent from 'superagent'
 import 'vizceral-react/dist/vizceral.css'
 import './Topology.css'
 
-// eslint-disable-next-line
-const PROMETHEUS_QUERY = 'sum(rate(operation_duration_seconds_count%7Bname%3D%22http_server%22%7D%5B1m%5D))+by+(service%2C+parent_service)++*+60'
+const PROMETHEUS_QUERY = 'sum(rate(operation_duration_seconds_count{name="http_server"}[1m]))'
+  + ' by (service, parent_service)  * 60'
 
 const ROOT_NODE = {
   name: 'INTERNET'

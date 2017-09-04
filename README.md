@@ -64,3 +64,8 @@ open http://localhost:8080
 ```
 
 ![Infrastructure topology](img/topology.png)
+
+## Future
+
+- add databases
+- show latency

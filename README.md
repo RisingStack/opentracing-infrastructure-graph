@@ -60,6 +60,7 @@ Uses [vizceral](https://github.com/Netflix/vizceral).
 
 ```
 npm run start-client
+open http://localhost:8080
 ```
 
 ![Infrastructure topology](img/topology.png)
